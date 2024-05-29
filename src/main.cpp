@@ -29,6 +29,7 @@ void setup() {
 
   dht.begin();
 
+
   // Inicializar la comunicación I2C
   Wire.begin(21, 22); // SDA: GPIO 21, SCL: GPIO 22
 
@@ -56,6 +57,7 @@ void loop() {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
+
 
   // Mostrar las lecturas en el monitor serie
   Serial.print(F("Humidity: "));
